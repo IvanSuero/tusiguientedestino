@@ -1,0 +1,87 @@
+{
+  "main": [
+    {
+      "name": "Islandia",
+      "image": "https://cdn.pixabay.com/photo/2017/03/02/16/54/iceland-2111811_1280.jpg"
+    },
+    {
+      "name": "Tailandia",
+      "image": "https://cdn.pixabay.com/photo/2016/11/02/16/02/natural-1792047_1280.jpg"
+    },
+    {
+      "name": "Estados Unidos",
+      "image": "https://cdn.pixabay.com/photo/2021/12/09/11/53/empire-state-building-6858030_1280.jpg"
+    },
+    {
+      "name": "Croacia",
+      "image": "https://cdn.pixabay.com/photo/2019/04/06/07/08/dubrovnik-4106788_1280.jpg"
+    }
+  ],
+  "all": [
+    {
+      "name": "Estados Unidos",
+      "image": "https://cdn.pixabay.com/photo/2021/12/09/11/53/empire-state-building-6858030_1280.jpg",
+      "description": "Grandes ciudades y el oeste americano"
+    },
+    {
+      "name": "Islandia",
+      "image": "https://cdn.pixabay.com/photo/2017/03/02/16/54/iceland-2111811_1280.jpg",
+      "description": "Tierra de Hielo y Fuego"
+    },
+    {
+      "name": "España",
+      "image": "https://cdn.pixabay.com/photo/2015/06/29/12/52/space-825551_1280.jpg",
+      "description": "De norte a sur"
+    },
+    {
+      "name": "Italia",
+      "image": "https://cdn.pixabay.com/photo/2014/08/20/22/27/colosseum-422942_1280.jpg",
+      "description": "De la antigua Roma a la Toscana"
+    },
+    {
+      "name": "Escocia",
+      "image": "https://cdn.pixabay.com/photo/2022/04/09/18/21/rocky-coast-7122028_1280.jpg",
+      "description": "Tierra de castillos y whisky"
+    },
+    {
+      "name": "Croacia",
+      "image": "https://cdn.pixabay.com/photo/2019/04/06/07/08/dubrovnik-4106788_1280.jpg",
+      "description": "El país de las mil islas"
+    },
+    {
+      "name": "Jordania",
+      "image": "https://cdn.pixabay.com/photo/2020/03/26/22/15/petra-4971956_1280.jpg",
+      "description": "Petra y el desierto"
+    },
+    {
+      "name": "Egipto",
+      "image": "https://cdn.pixabay.com/photo/2013/10/13/10/50/pyramid-195009_1280.jpg",
+      "description": "Pirámides y el Nilo"
+    },
+    {
+      "name": "Vietnam",
+      "image": "https://cdn.pixabay.com/photo/2020/04/28/13/21/landscape-5104510_1280.jpg",
+      "description": "Mochilero por el sudeste asiático"
+    },
+    {
+      "name": "Tailandia",
+      "image": "https://cdn.pixabay.com/photo/2016/11/02/16/02/natural-1792047_1280.jpg",
+      "description": "El país de la sonrisa"
+    },
+    {
+      "name": "Japón",
+      "image": "https://cdn.pixabay.com/photo/2016/11/29/12/12/architecture-1869398_1280.jpg",
+      "description": "De Tokio a Kioto"
+    },
+    {
+      "name": "Maldivas",
+      "image": "https://cdn.pixabay.com/photo/2015/11/15/14/30/veligandu-island-1044366_1280.jpg",
+      "description": "Paraíso en el Índico"
+    },
+    {
+      "name": "Seychelles",
+      "image": "https://cdn.pixabay.com/photo/2018/10/14/11/12/seychelles-3746207_1280.jpg",
+      "description": "Islas de ensueño"
+    }
+  ]
+}
