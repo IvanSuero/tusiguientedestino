@@ -16,7 +16,7 @@ export default function Footer() {
             <h3 className='text-lg font-bold mb-2 uppercase'>Tu Siguiente Destino</h3>
             <p>Planificadores de viajes y experiencias únicas e inolvidables.</p>
           </div>
-          <div>
+          {/* <div>
             <h3 className='text-lg font-semibold mb-2'>Enlaces de interés</h3>
             <ul className='space-y-1'>
               {links.map((link, index) => (
@@ -32,7 +32,7 @@ export default function Footer() {
               <Mail className="w-6 h-6 text-primary mb-4" />
               <p>info@tusiguientedestino.com</p>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className='mt-6 text-center'>
           <p>&copy; 2025 Tu Siguiente Destino. Todos los derechos reservados.</p>

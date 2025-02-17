@@ -26,8 +26,9 @@ export default function MainDestinations() {
           ))}
         </div>
         <div className='flex justify-center items-center'>
-          <Link href="/free-budget">
-            <Button size="lg" className='bg-primary text-white hover:bg-primary/90 uppercase'>Solicita un presupuesto gratuito</Button>
+          <Link href="/destinations">
+            {/* <Button size="lg" className='bg-primary text-white hover:bg-primary/90 uppercase'>Solicita un presupuesto gratuito</Button> */}
+            <Button size="lg" className='bg-primary text-white hover:bg-primary/90 uppercase'>Todos nuestros destinos</Button>
           </Link>
         </div>
       </div>

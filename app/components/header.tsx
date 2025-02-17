@@ -12,12 +12,12 @@ export default function Header() {
           <Link href='/destinations' className='text-gray-600 hover:text-primary hidden sm:block'>
             Destinos
           </Link>
-          <Link href='/free-budget' className='text-gray-600 hover:text-primary hidden sm:block'>
+          {/* <Link href='/free-budget' className='text-gray-600 hover:text-primary hidden sm:block'>
             Presupuesto gratuito
           </Link>
           <Link href='/plan-trip'>
             <Button>Planifica tu viaje</Button>
-          </Link>
+          </Link> */}
         </div>
       </nav>
     </header>

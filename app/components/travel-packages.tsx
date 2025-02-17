@@ -59,7 +59,12 @@ export default function TravelPackages() {
   return (
     <section className="py-12 bg-gray-50" id="travelPackages">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Nuestros Paquetes de Viaje</h2>
+        <h2 className="text-3xl font-bold text-center mb-2">Nuestros Paquetes de Viaje</h2>
+        <Link href="/prelanzamiento" className="text-xl font-semibold text-center text-blue-400 hover:underline">
+          <p className="mb-6 hover:scale-105 transition-all duration-300">
+            👉 ¡Apuntate al prelanzamiento y consigue hasta un 50% de descuento en los paquetes Intermedio y Premium! 👈
+          </p>
+        </Link>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {packages.map((pkg, index) => (
             <Card key={index} className="flex flex-col h-full">
