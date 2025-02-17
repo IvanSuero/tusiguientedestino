@@ -5,9 +5,12 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Check } from "lucide-react"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import destinations from '../../data/destinations.json'
 
 export default function FreeBudget() {
   const [submitted, setSubmitted] = useState(false)
+  const options = destinations.all
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault()
@@ -48,7 +51,18 @@ export default function FreeBudget() {
             <form onSubmit={handleSubmit} className="max-w-lg mx-auto space-y-6">
               <Input type="text" placeholder="Nombre" required />
               <Input type="email" placeholder="Email" required />
-              <Input type="text" placeholder="Destino/s" required />
+              <Select>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Destino" />
+                </SelectTrigger>
+                <SelectContent>
+                  {options.map((option) => (
+                    <SelectItem key={option.name} value={option.name}>
+                      {option.name}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
               <Input type="number" placeholder="Número de viajeros" required min="1" />
               <Input type="number" placeholder="Número de dias" required min="1" />
               <Textarea placeholder="Aquí puedes especificar fechas, pedir destinos, visitas o excursiones específicas o hacer cualquier sugerencia/petición (opcional)." />

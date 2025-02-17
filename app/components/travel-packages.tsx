@@ -8,16 +8,16 @@ const packages = [
     icon: Map,
     description: "Para personas que ya tienen un destino en mente pero necesitan ayuda con detalles.",
     pdfFeatures: [
-      "Recomendación de vuelos y hospedajes según presupuesto.",
-      "Lista de actividades y atracciones principales.",
-      "Consejos sobre transporte local y clima.",
-      "Recomendación de seguros de viaje y tarjetas SIM."
+      "Recomendación de vuelos, hospedajes, actividades y atracciones.",
+      "Consejos y curiosidades del destino.",
+      "Presupuesto general estimado.",
     ],
     extraFeatures: [
       "2 consultas por email o WhatsApp"
     ],
-    priceListedDestination: "20€",
-    priceNewDestination: "35€",
+    priceListedDestination: "10€",
+    priceNewDestination: "25€",
+    estimatedDelivery: "1 día"
   },
   {
     title: "Paquete Intermedio – Itinerario Personalizado",
@@ -25,32 +25,33 @@ const packages = [
     description: "Para viajeros que quieren un plan detallado sin tener que investigar.",
     pdfFeatures: [
       "Todo lo del Paquete Básico.",
-      "Itinerario completo día por día con horarios y rutas sugeridas.",
-      "Recomendaciones de restaurantes según preferencias alimenticias.",
-      "Actividades recomendadas según tipo de viajero (aventura, cultural, relax).",
-      "Mapas y enlaces a reservas de transporte y tours.",
+      "Itinerario completo día por día con horarios, rutas y restaurentes sugeridos.",
+      "Mapas con las ubicaciones de los lugares a visitar y las rutas.",
+      "Presupuesto detallado con varias opciones de precio.",
     ],
     extraFeatures: [
-      "Atender dudas hasta inicio de viaje por email o WhatsApp.",
+      "Atención de dudas hasta el inicio de viaje por email o WhatsApp.",
     ],
-    priceListedDestination: "60€",
-    priceNewDestination: "100€",
+    priceListedDestination: "50€",
+    priceNewDestination: "75€",
+    estimatedDelivery: "3-4 dias"
   },
   {
     title: "Paquete Premium – Viaje 100% Personalizado + Gestión",
     icon: Gem,
-    description: "Para personas que quieren una experiencia sin preocupaciones y que les organices todo.",
+    description: "Para personas que quieren una experiencia sin preocupaciones con todo organizado.",
     pdfFeatures: [
       "Todo lo del Paquete Intermedio.",
       "Videollamada de 25min para hablar de preferencias y ajustes.",
       "Revisión del itinerario y ajustes según feedback.",
     ],
     extraFeatures: [
-      "Soporte por WhatsApp durante el viaje (respuesta en menos de 12h).",
+      "Soporte por WhatsApp durante el viaje (respuesta en menos de 24h).",
       "Acompañar al cliente en la reserva de vuelos, hoteles y actividades.",
     ],
     priceListedDestination: "150€",
     priceNewDestination: "200€",
+    estimatedDelivery: "Según disponibilidad"
   },
 ]
 
@@ -94,8 +95,11 @@ export default function TravelPackages() {
                   <p>Nuevo destino: {pkg.priceNewDestination}</p>
                   <p className="mt-2 text-sm text-gray-600">
                     <Link href="/destinations" className="text-primary underline">
-                      Ver lista de destinos
+                      Ver destinos seleccionados
                     </Link>
+                  </p>
+                  <p className="mt-4 font-semibold">
+                    Tiempo estimado de entrega: <span className="font-normal">{pkg.estimatedDelivery}</span>
                   </p>
                 </div>
               </CardContent>

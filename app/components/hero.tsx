@@ -12,8 +12,8 @@ export default function Hero() {
         backgroundSize: 'cover'
       }}>
         <div className='relative z-10 text-center items-center justify-center text-white px-4 sm:px-6 lg:px-8'>
-          <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold mb-6 shadow-text'>Destinos de ensueño solo para ti</h1>
-          <p className='text-xl sm:text-2xl mb-8 max-w-3xl mx-auto shadow-text'>Déjanos planificar tu viaje perfecto, a medida.</p>
+          <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold mb-6 shadow-text'>Nosotros organizamos, tú viajas</h1>
+          <p className='text-xl sm:text-2xl mb-8 max-w-3xl mx-auto shadow-text'>Viajes personalizados a medida sin comisiones de agencias</p>
           <Link href="#travelPackages">
             <Button size="lg" className='bg-primary text-white hover:bg-primary/90'>Descubre nuestros paquetes</Button>
           </Link>
