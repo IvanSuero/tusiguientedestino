@@ -8,12 +8,10 @@ const packages = [
     icon: Map,
     description: "Para personas que ya tienen un destino en mente pero necesitan ayuda con detalles.",
     pdfFeatures: [
-      "Recomendación de vuelos, hospedajes, actividades y atracciones.",
-      "Consejos y curiosidades del destino.",
+      "Itinerario básico con lugares a visitar y horarios.",
       "Presupuesto general estimado.",
     ],
     extraFeatures: [
-      "2 consultas por email o WhatsApp"
     ],
     priceListedDestination: "10€",
     priceNewDestination: "25€",
@@ -24,13 +22,13 @@ const packages = [
     icon: Plane,
     description: "Para viajeros que quieren un plan detallado sin tener que investigar.",
     pdfFeatures: [
-      "Todo lo del Paquete Básico.",
       "Itinerario completo día por día con horarios, rutas y restaurentes sugeridos.",
       "Mapas con las ubicaciones de los lugares a visitar y las rutas.",
+      "Propuestas de vuelos y alojamientos según tus fechas y presupuesto.",
       "Presupuesto detallado con varias opciones de precio.",
     ],
     extraFeatures: [
-      "Atención de dudas hasta el inicio de viaje por email o WhatsApp.",
+      "Hasta 2 consultas por email o Whatsapp para ajustes.",
     ],
     priceListedDestination: "50€",
     priceNewDestination: "75€",
@@ -46,7 +44,7 @@ const packages = [
       "Revisión del itinerario y ajustes según feedback.",
     ],
     extraFeatures: [
-      "Soporte por WhatsApp durante el viaje (respuesta en menos de 24h).",
+      "Soporte por WhatsApp durante el viaje (respuesta en 24h).",
       "Acompañar al cliente en la reserva de vuelos, hoteles y actividades.",
     ],
     priceListedDestination: "150€",
@@ -85,7 +83,7 @@ export default function TravelPackages() {
                     </li>
                   ))}
                 </ul>
-                <p className="font-semibold mb-2 mt-4">Y además:</p>
+                {pkg.extraFeatures.length > 0 && <p className="font-semibold mt-4 mb-2">Y además:</p>}
                 <ul className="space-y-2">
                   {pkg.extraFeatures.map((feature, fIndex) => (
                     <li key={fIndex} className="flex items-start">
