@@ -20,6 +20,9 @@ export default function PrelaunchForm() {
     destination: "",
     package: "",
   });
+  const showSendEmailAlert = () => {
+    alert("¡Gracias por registrarte! Te enviaremos un correo con el código de descuento en el lanzamiento oficial.");
+  }
 
   const handleChange = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
@@ -40,6 +43,8 @@ export default function PrelaunchForm() {
         package: formData.package,
       }
       await emailjs.send(`${serviceId}`, `${templateId}`, params, userId)
+      setFormData({ name: "", email: "", destination: "", package: "" })
+      showSendEmailAlert()
     } catch (error) {
       console.error('Error sending email:', error)
     }
