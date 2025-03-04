@@ -39,7 +39,7 @@ export default function PrelaunchForm() {
         destination: formData.destination,
         package: formData.package,
       }
-      // const res = await emailjs.send(`${serviceId}`, `${templateId}`, params, userId)
+      await emailjs.send(`${serviceId}`, `${templateId}`, params, userId)
     } catch (error) {
       console.error('Error sending email:', error)
     }
