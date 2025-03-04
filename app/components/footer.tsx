@@ -1,13 +1,13 @@
-import Link from 'next/link'
-import { Mail } from 'lucide-react'
+// import Link from 'next/link'
+// import { Mail } from 'lucide-react'
 
 export default function Footer() {
-  const links = [
-    { title: 'Inicio', url: '/' },
-    { title: 'Destinos', url: '/' },
-    { title: 'Presupuesto gratuito', url: '/' },
-    { title: 'Planifica tu viaje', url: '/' },
-  ]
+  // const links = [
+  //   { title: 'Inicio', url: '/' },
+  //   { title: 'Destinos', url: '/' },
+  //   { title: 'Presupuesto gratuito', url: '/' },
+  //   { title: 'Planifica tu viaje', url: '/' },
+  // ]
   return (
     <footer className='bg-gray100 text-gray-600'>
       <div className='container mx-auto px-4 py-8'>
